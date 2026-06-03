@@ -17,7 +17,7 @@ COPY . /app/source
 
 WORKDIR /app/source
 
-RUN ./mvnw clean package
+RUN mvn clean package
 
 
 # Stage 2 - Runtime
