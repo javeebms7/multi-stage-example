@@ -21,7 +21,7 @@ RUN mvn clean package
 
 
 # Stage 2 - Runtime
-FROM openjdk:8-jre-slim
+FROM eclipse-temurin:8-jre
 
 COPY --from=builder /app/source/target/*.jar /app/app.jar
 
